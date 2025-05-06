@@ -1,0 +1,12 @@
+{
+  "name": "bluesky-subscriber",
+  "version": "1.0.0",
+  "description": "A simple Bluesky feed subscriber",
+  "main": "bluesky-subscriber.js",
+  "dependencies": {
+    "@atproto/api": "^0.9.6",
+    "@kafkajs/confluent-schema-registry": "^3.8.0",
+    "dotenv": "^16.4.7",
+    "kafkajs": "^2.2.4"
+  }
+}
