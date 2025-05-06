@@ -1,0 +1,21 @@
+{
+    "type": "record",
+    "name": "BlueSkyMessage",
+    "namespace": "com.example.bluesky",
+    "fields": [
+      { "name": "author", "type": "string" },
+      { "name": "text", "type": "string" },
+      { "name": "postedAt", "type": "string" },
+      { "name": "images", "type": "int" },
+      { "name": "hashtags", "type": { "type": "array", "items": "string" } },
+      { "name": "mentions", "type": { "type": "array", "items": "string" } },
+      { "name": "linkCount", "type": "int" },
+      { "name": "repostBy", "type": ["null", "string"], "default": null },
+      { "name": "replyTo", "type": ["null", "string"], "default": null },
+      { "name": "likeCount", "type": "int" },
+      { "name": "repostCount", "type": "int" },
+      { "name": "replyCount", "type": "int" },
+      { "name": "quoteCount", "type": "int" },
+      { "name": "lang", "type": ["null", "string"], "default": null }
+    ]
+  }
